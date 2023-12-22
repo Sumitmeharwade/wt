@@ -1,0 +1,9 @@
+<div>
+    <h2>List of Issued Books</h2>
+    <ul>
+      <li *ngFor="let book of issuedBooks">
+        Student: {{ book.studentName }} | Book: {{ book.bookTitle }} | Return Date: {{ book.returnDate | date:'medium' }}
+      </li>
+    </ul>
+  </div>
+  

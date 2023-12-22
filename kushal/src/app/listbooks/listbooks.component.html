@@ -1,0 +1,8 @@
+<p>listbooks works!</p>
+<div *ngFor="let student of bookService.studentlists">
+    <h3>{{ student.studentName }}</h3>
+    <p>Book Name: {{ student.bookName }}</p>
+    <p>Issue Date: {{ student.issueDate }}</p>
+    <p>Return Date: {{ student.returnDate }}</p>
+    <hr />
+  </div>

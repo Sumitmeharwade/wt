@@ -1,0 +1,14 @@
+<div *ngIf="!authService.loggedIn; else LoggedIn">
+    <form>
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Username" [(ngModel)]="username" required>
+        <label for="password"></label>
+        <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="password" required>
+        <input type="button" value="Login" (click)="login()">
+    </form>
+</div>
+<ng-template #LoggedIn>
+    <h1>Welcome {{username}}</h1>
+    
+</ng-template>
+

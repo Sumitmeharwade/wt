@@ -1,0 +1,12 @@
+<p>issuebooks works!</p>
+<form >
+    <label for="studentName">Student Name</label>
+    <input type="text" id="studentName" name="studentName" placeholder="Student Name" [(ngModel)]="studentName" required>
+    <label for="bookname">Book Name</label>
+    <input type="text" id="bookname" name="bookname" placeholder="Book Name" [(ngModel)]="bookName" required>
+    <label for="issuedate">Issue Date</label>
+    <input type="date" id="issuedate" name="issuedate" placeholder="Issue Date" [(ngModel)]="issueDate" required>
+    <label for="returndate">Return Date</label>
+    <input type="date" id="returndate" name="returndate" placeholder="Return Date" [(ngModel)]="returnDate" required>
+    <input type="button" value="Issue" (click)="issue()">
+</form>

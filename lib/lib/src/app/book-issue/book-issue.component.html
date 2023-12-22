@@ -1,0 +1,22 @@
+<div>
+    <h2>Book Issuing</h2>
+    <form #bookIssueForm="ngForm" (ngSubmit)="issueBook()" novalidate>
+      <label for="studentName">Student Name:</label>
+      <input type="text" id="studentName" name="studentName" [(ngModel)]="formData.studentName" required minlength="3" maxlength="50"> 
+      <br>
+      <br>
+  
+      <label for="bookTitle">Book Title:</label>
+      <input type="text" id="bookTitle" name="bookTitle" [(ngModel)]="formData.bookTitle" required minlength="3" maxlength="50">
+      <br>
+      <br>
+  
+      <label for="returnDate">Return Date:</label>
+      <input type="date" id="returnDate" name="returnDate" [(ngModel)]="formData.returnDate" required minlength="3" maxlength="50">
+      <br>
+      <br>
+  
+      <button type="submit" [disabled]="!bookIssueForm.valid">Issue Book</button>
+    </form>
+  </div>
+  
