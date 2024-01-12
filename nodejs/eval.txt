@@ -1,0 +1,14 @@
+Imagine you are developing a web application that manages a Hotel Booking System. The application has a database with two tables: Hotel and Customer. The Hotel table has columns like room no., custId, alloted(Yes/No), price. The Customer has columns such as custId,Customer name, Address, age. 
+
+Your task is to create a Node.Js server that interacts with the database using SQL queries to perform the following operations:
+1. Retrieve the list of all rooms in the hotel that are not alloted.
+2. Retrieve list of all rooms in the hotel that are allottd to the customer with customer details.
+3. Book the room to the new customer
+4. Perform checkout operation of customer and make the room not allotted.
+
+
+How would you structure the SQL  queries in your NodeJs application to achieve these operations efficiently?
+
+
+
+
